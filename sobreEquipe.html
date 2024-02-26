@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre - Nossa Equipe</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!--box icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body>
+
+    
+
+    <header class="header">
+        <a href="index.html" class="logo">Assistente.</a>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <nav class="navbar">
+            <a href="index.html#home" class="active">Início</a>
+            <a href="index.html#sobre">Sobre</a>
+            <a href="index.html#sigaa">SIGAA</a>
+            <a href="index.html#biblioteca">Bibli. Virtual IF</a>
+            <a href="index.html#contatos">Contatos</a>
+            <a href="index.html#problema">Problema</a>
+            <a href="traducao.html">Tradução</a>
+            
+
+            <span class="active-navbar"></span>
+
+        </nav>
+
+    </header>
+
+    
+    <section class="team">
+        <h2 class="heading">Nossa <span>Equipe</span></h2>
+        
+        <div class="container team_container">
+            <article class="team_member" id="team_member_1">
+                <div class="content">
+                <div class="team_member-image">
+                    <img src="imgEquipe/MariaAlyssa.png" alt="integrante">
+                    <div class="circle-spin"></div>
+                </div>
+                
+                <div class="team_member-info">
+                    <h3>Maria Alyssa</h3>
+                    <p>Desenvolvimento Front-end web.</p>
+                    <br>
+                    
+                </div>
+            
+                <img src="img/logoCrachabg.png" class="img-tamanho">
+               <!-- <button onclick="flipCard(1)"><img src="img/logoCracha.png"></button>-->
+                <div class="team_member-socials">
+                    <a href="mailto:  2022308945@ifam.edu.br" class="link-contato" target="_blank"><i class='bx bxs-envelope'></i></a>
+                    
+                </div>
+            </div>
+            </article>
+
+            
+
+            
+
+            <article class="team_member">
+                <div class="team_member-image">
+                    <img src="imgEquipe/Kaua.png" alt="integrante">
+                </div>
+                
+                <div class="team_member-info">
+                    <h3>Kauã Monteiro Coelho</h3>
+                    <p>Produção de conteúdo e tradução</p>
+                   <br> 
+                    
+                </div>
+                
+                <img src="img/logoCrachabg.png" class="img-tamanho">
+
+                <div class="team_member-socials">
+                    <a href="mailto:  2022309156@ifam.edu.br" class="link-contato" target="_blank"><i class='bx bxs-envelope'></i></a>
+                </div>
+               
+            </article>
+
+            <article class="team_member">
+                <div class="team_member-image">
+                    <img src="imgEquipe/deliane.png" alt="integrante">
+                </div>
+                
+                <div class="team_member-info">
+                    <h3>Deliane dos Santos Salgado</h3>
+                   
+                    <p>Produção e gestão de conteúdo.</p>
+                    <br>
+                </div>
+                <img src="img/logoCrachabg.png" class="img-tamanho">
+ 
+                <div class="team_member-socials">
+                    <a href="mailto:  2022323342@ifam.edu.br" target="_blank"><i class='bx bxs-envelope'></i></a>
+                </div>
+            </article>
+
+
+            <article class="team_member">
+                <div class="team_member-image">
+                    <img src="imgEquipe/JudaLyon.png" alt="integrante">
+                </div>
+
+                
+                
+                <div class="team_member-info">
+                    <h3>Judá-Lyon Pereira Maia</h3>
+                    
+                    <p> Produção de conteúdo para o site.</p>
+                   <br>
+                </div>
+                <img src="img/logoCrachabg.png" class="img-tamanho">
+
+                <div class="team_member-socials">
+                    <a href="mailto:  2022308874@ifam.edu.br" target="_blank"><i class='bx bxs-envelope'></i></a>
+                </div>
+            </article>
+
+            <article class="team_member">
+                <div class="team_member-image">
+                    <img src="imgEquipe/Kirlen.png" alt="integrante">
+                </div>
+                
+                <div class="team_member-info">
+                    <h3>Kirlen Carvalho</h3>
+                    
+                    <p>Responsável pelo Web Design.</p>
+                   <br>
+                </div>
+                                <img src="img/logoCrachabg.png" class="img-tamanho">
+
+                <div class="team_member-socials">
+                    <a href="mailto:  kirlenifam2030@gmail.com" target="_blank"><i class='bx bxs-envelope'></i></a>
+                </div>
+            </article>
+
+            
+            
+        </div>
+    </section>
+<!--<script>
+ function flipCard(index) {
+    // Selecione o elemento do team_member pelo ID correspondente
+    const teamMember = document.getElementById(`team_member_${index}`);
+    
+    // Selecione o elemento de conteúdo dentro do team_member
+    const content = teamMember.querySelector('.content');
+    
+    // Selecione a imagem dentro do team_member
+    const image = teamMember.querySelector('.team_member-image img');
+    
+    // Verifique se o cartão está virado
+    const isFlipped = teamMember.classList.contains('flipped');
+    
+    // Desvire todos os cartões antes de virar o cartão atual
+    const allTeamMembers = document.querySelectorAll('.team_member');
+    allTeamMembers.forEach((member) => {
+        if (member !== teamMember && member.classList.contains('flipped')) {
+            member.classList.remove('flipped');
+            const memberContent = member.querySelector('.content');
+            const memberImage = member.querySelector('.team_member-image img');
+            memberContent.innerHTML = ''; // Remova o conteúdo
+            if (memberImage) {
+                memberImage.classList.remove('hidden'); // Exiba a imagem
+            }
+        }
+    });
+    
+    // Alternar a classe .flipped quando o botão for clicado
+    if (teamMember && content) {
+        teamMember.classList.toggle('flipped');
+        
+        // Verifique se o cartão está virado
+        if (isFlipped) {
+            // Se estiver desvirado, remova a classe .hidden da imagem (para exibi-la novamente)
+            if (image) {
+                image.classList.remove('hidden');
+            }
+        } else {
+            // Se estiver virado, remova o conteúdo e adicione a classe .hidden à imagem
+            content.innerHTML = '';
+            if (image) {
+                image.classList.add('hidden');
+            }
+        }
+    }
+}
+
+
+</script>-->
+    
+    
+        
+</body>
+<script src="script.js"></script>
+</html>
